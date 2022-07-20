@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Tutaj znajdziesz nalepsze kody rabatowe i oszczędzisz swoje pieniądze. Posiadamy tylko aktualne kody rabatowe.">
+		<script
+			src="https://kit.fontawesome.com/34a052d4c9.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/34a052d4c9.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
+		<title>Kodowaci.pl</title>
+	</head>
+	<body id="home">
+		<div class="nav-mobile">
+			<ol>
+				<li class="nav-mobile__link nav__link"><a class="nav-mobile__item" href="https://github.com/TheKASTeTx" target="_blank">about me</a></li>
+				<li class="nav-mobile__link nav__link notactive offersLinkMobile"><a class="nav-mobile__item" href="#offers">promocje</a></li>
+				<li class="nav-mobile__link"><a class="nav-mobile__item" href="#help">pomoc</a></li>
+			</ol>
+			<button class="nav-mobile__exit">
+				<i class="fa-solid fa-arrow-right-from-bracket"></i>
+			</button>
+		</div>
+
+		<nav class="nav">
+			<div class="nav__item--btn">
+				<button class="menu-btn">
+					<p><i class="fa-solid fa-bars"></i></p>
+				</button>
+			</div>
+			<div class="nav__item">
+				<a href="https://github.com/TheKASTeTx" class="nav__link" target="_blank">about me</a>
+			</div>
+			<div class="nav__item"><a href="#offers" class="nav__link notactive offersLinkDesktop">promocje</a></div>
+			<div class="nav__item"><a href="#help" class="nav__link">pomoc</a></div>
+
+			<div class="nav__item--join">
+				<button class="join-btn"><p>dołącz</p></button>
+				<img
+					class="user-photo"
+					src="https://picsum.photos/200"
+					alt="user profile"
+				/>
+				<p class="logged-user"></p>
+			</div>
+		</nav>
+
+		<div class="form-log">
+			<form class="form">
+				<h1>Zaloguj się!</h1>
+
+				<div class="form__box">
+					<label for="username">Nazwa użytkownika:</label>
+					<input
+						class="username"
+						type="text"
+						id="username"
+						placeholder="Podaj nazwę użytkownika"
+						autocomplete="username"
+					/>
+					<p class="username-error-text error-text"></p>
+				</div>
+				<div class="form__box">
+					<label for="password">Hasło:</label>
+					<input
+						class="password"
+						type="password"
+						id="password"
+						placeholder="Podaj hasło"
+						autocomplete="new-password"
+					/>
+					<p class="password-error-text error-text"></p>
+				</div>
+
+				<div class="control-buttons">
+					<button class="log" type="button">Zaloguj</button>
+
+					<p>Jeśli nie masz konta zarejestruj się!</p>
+					<button class="register">Zarejestruj się!</button>
+				</div>
+
+				<button class="form__exit" type="button">
+					<i class="fa-solid fa-arrow-right-from-bracket"></i>
+				</button>
+			</form>
+		</div>
+
+		<main>
+			<section class="info">
+				<div class="info__shadow"></div>
+
+				<div class="info__text">
+					<div class="wrapper">
+						<h1 class="info__title">Najlepsze kody rabatowe!</h1>
+						<p class="info__description">
+							Masz dość nie działających kodów rabatowych? Tutaj znajdziesz
+							tylko aktualne rabaty, dołącz do naszej społeczności i dziel się
+							znalezionymi promocjami! Pomaganie sobie nawzajem nic nie
+							kosztuję! Wchodzisz w to?
+						</p>
+					</div>
+					<button class="info__btn">Zaloguj by zobaczyć promocje!</button>
+				</div>
+			</section>
+			<section class="offers" id="offers">
+				<h3 class="offers__topic">Aktualne Promocje</h3>
+				<div class="offers__box">
+					<div class="offers__item">
+						<p class="offers__title">Monitor Asus 27 cali 4K</p>
+						<p class="offers__price">1831<span> PLN</span></p>
+						<p class="offers__code">GHR1-32SF</p>
+						<a
+							class="offers__link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							>Ustrzel promocje <i class="fa-solid fa-cart-arrow-down"></i
+						></a>
+					</div>
+
+					<div class="offers__item">
+						<p class="offers__title">Myszka razer</p>
+						<p class="offers__price">542<span> PLN</span></p>
+						<p class="offers__code">GDSK234F</p>
+						<a
+							class="offers__link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							>Ustrzel promocje <i class="fa-solid fa-cart-arrow-down"></i
+						></a>
+					</div>
+					<div class="offers__item">
+						<p class="offers__title">Macbook 13 pro 2021</p>
+						<p class="offers__price">4899<span> PLN</span></p>
+						<p class="offers__code">APPLE20</p>
+						<a
+							class="offers__link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							>Ustrzel promocje <i class="fa-solid fa-cart-arrow-down"></i
+						></a>
+					</div>
+					<div class="offers__item">
+						<p class="offers__title">Jordan 1 High Tie-Dye</p>
+						<p class="offers__price">799<span> PLN</span></p>
+						<p class="offers__code">HOLYDAYS20</p>
+						<a
+							class="offers__link"
+							href=""
+							target="_blank"
+							rel="noopener noreferrer"
+							>Ustrzel promocje <i class="fa-solid fa-cart-arrow-down"></i
+						></a>
+					</div>
+				</div>
+				<button class="offers__btn">Dodaj promocje</button>
+				
+				<div class="create-offer">
+					<button class="create-offer__exit">
+						<i class="fa-solid fa-arrow-right-from-bracket"></i>
+					</button>
+					<label for="name">Nazwa oferty:</label>
+					<input class="create-offer__name" id="name" type="text" />
+					<label for="price">Cena:</label>
+					<input class="create-offer__price" id="price" type="number" />
+					<label for="code">Kod rabatowy:</label>
+					<input class="create-offer__code" id="code" type="text" />
+					<label for="link">Link do oferty:</label>
+					<input class="create-offer__link" id="link" type="text" />
+
+					<p class="create-offer__info">
+						Pamiętaj by czytelnie opisać oferte, aby dla innych użytkowników
+						była ona zrozumiała.
+					</p>
+					<button class="create-offer__send">Dodaj</button>
+				</div>
+			</section>
+			
+			
+
+			<section class="help" id="help">
+				<div class="help__shadow">
+				<div class="wrapper">
+
+			
+					<div class="help__text">
+					<h3 class="help__title">Co i jak?</h3>
+					<p class="help__description">Chcesz zacząć oszczędzać? Nic prostszego, spójrz w zakładkę promocje i znajdz wybraną dla Ciebie ofertę. Następnie skopiuj kod do schowka i kliknij w link.
+						Przy składaniu zamówienia na wybranym sklepie wklej skopiowany kod w miejsce kodów rabatowych w koszyku. 
+					</p>
+					<p class="help__description">To Ty znalazłeś super promocje? Podziel się nią z innymi użytkownikami!
+						Kliknij przycisk "DODAJ PROMOCJE" i wypełnij wszystkie pola, pamiętaj by zadbać o jak najczytelniejsze opisanie oferty, tak aby wszyscy użytkownicy z łatwością mogli skorzystać z twojej oferty.
+					</p>
+				</div>
+			</div>
+				</div>
+			</section>
+
+			<section class="benefits">
+				<h4 class="benefits__title">Czy wiesz ile możesz oszczędzić korzystająć z naszej strony?</h4>
+				<p class="benefits__description">Usiądź i zastanów się ile średnio wydajesz tygodniowo na zakupy? Czy jest to 100 złotych? A może 200 lub 300?
+				</p>
+				<p class="benefits__description">Przyjmijmy do obliczeń 100 złotych, na naszej stronie pojawiają się kody rabatowe nawet na -70%, ale uśredniając jest to 24,5%.
+				</p>
+				<p class="benefits__description">Rok ma 52 tygodnie, to znaczy że używająć kodów rabatowych oszczędzasz aż 1274 złote rocznie!
+				</p>
+				<p class="benefits__title">Oblicz swoje oszczędności</p>
+				<input class="benefits__input" type="number" placeholder="Tygodniowe wydatki">
+				<button class="benefits__btn">Oblicz</button>
+				<p class="benefits__score">Oszczędzisz aż <span class="benefits__savings"></span> złotych!</p>
+			</section>
+
+			<footer class="footer">
+				<p>&copy;<span id="footer__year"></span> Wszelkie prawa zastrzeżone: Kodowaci.pl</p>
+			</footer>
+				
+		
+		</main>
+
+		<script src="./dist/js/main.min.js"></script>
+
+
+
+	</body>
+</html>
+
+

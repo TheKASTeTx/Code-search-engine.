@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/34a052d4c9.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./dist/css/main.min.css" />
+		<title>KASTeT</title>
+		
+	</head>
+	<body>
+		<div class="nav-mobile">
+			<ol>
+				<li class="nav-mobile__link"><a href="index.html">home</a></li>
+				<li class="nav-mobile__link"><a href="#">promocje</a></li>
+				<li class="nav-mobile__link"><a href="#">pomoc</a></li>
+
+			</ol>
+            <button class="nav-mobile__exit"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+		</div>
+
+		<nav class="nav">
+			<div class="nav__item--btn">
+				<button class="menu-btn">
+					<p><i class="fa-solid fa-bars"></i></p>
+				</button>
+			</div>
+			<div class="nav__item"><a href="index.html" class="nav__link">home</a></div>
+			<div class="nav__item"><a href="#" class="nav__link">promocje</a></div>
+			<div class="nav__item"><a href="#" class="nav__link">pomoc</a></div>
+
+			<div class="nav__item--join">
+				<img class="user-photo" src="https://picsum.photos/200" alt="user profile">
+				<p class="logged-user"></p>
+
+			</div>
+		</nav>
+
+        <div class="form-log">
+
+            <form class="form">
+                
+                
+                
+                <h1>Zaloguj się!</h1>
+
+
+                    <div class="form__box">
+                        <label for="username">Nazwa użytkownika:</label>
+                        <input class="username" type="text" id="username" placeholder="Podaj nazwę użytkownika" autocomplete="username">
+                        <p class="username-error-text error-text"></p>
+                    </div>
+                    <div class="form__box">
+                        <label for="password">Hasło:</label>
+                        <input class="password" type="password" id="password" placeholder="Podaj hasło" autocomplete="new-password">
+                        <p class="password-error-text error-text"></p>
+                    </div>
+
+                    
+                    
+                    <div class="control-buttons">
+                        <button class="log" type="button">Zaloguj</button>
+						
+						
+							<p>Jeśli nie masz konta zarejestruj się!</p>
+							<button class="register">Zarejestruj się!</button>
+						
+                    </div>
+
+					<button class="form__exit"  type="button"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    
+                    
+                    
+                  
+                </form>
+            </div>
+                
+                <main>
+					<section class="info">
+						<div class="info__shadow"></div>
+						
+						<div class="info__text">
+							
+							<div class="wrapper">
+								<h1 class="info__title">Działa</h1>
+								<p class="info__description">To
+									<a href="">Tutaj</a> i chuj
+								</p>
+							</div>
+								<button class="info__btn">Zobacz aktualne promocję</button>
+							</div>
+					</section>
+				</main>
+                
+
+                
+                
+                <script src="./dist/js/main.min.js"></script>
+            </body>
+            </html>
+
+			
+
