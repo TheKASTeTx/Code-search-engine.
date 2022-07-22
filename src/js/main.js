@@ -35,10 +35,31 @@ const inputCodeOffer = document.querySelector('.create-offer__code');
 const inputLinkOffer = document.querySelector('.create-offer__link');
 const offerBtn = document.querySelector('.create-offer__send');
 const offersBox = document.querySelector('.offers__box');
-
 const notActiveLink = document.querySelector('.offersLinkDesktop')
-
 document.getElementById("footer__year").innerHTML = new Date().getFullYear();
+
+const benefitsInput = document.querySelector('.benefits__input')
+const benefitsBtn = document.querySelector('.benefits__btn')
+const benefitsScore = document.querySelector('.benefits__score')
+
+const calculateBenefit = () => {
+	if (benefitsInput.value<=0) {
+		benefitsScore.innerHTML = `Wydatki nie mogą być ujemne 😅`
+	}	
+	else if(benefitsInput.value!== '' && benefitsInput.value>0) {
+		let sum = ((benefitsInput.value * 0.245) *52).toFixed(2)
+		const pennies = sum.split(".")[1]
+		const total = sum.split(".")[0]
+
+		if(pennies==='00') {
+			benefitsScore.innerHTML = `Oszczędzasz aż ${total} złotych rocznie!`
+		}else{
+			benefitsScore.innerHTML = `Oszczędzasz aż ${total} złotych i ${pennies} groszy rocznie!`
+		}
+		
+	}
+	benefitsInput.value=''
+};
 
 const openNav = () => {
 	navMobile.style.transform = 'translate(0,0)';
@@ -174,3 +195,4 @@ logBtn.addEventListener('click', checkForm);
 addOffer.addEventListener('click', openOfferCreator);
 exitOfferCreator.addEventListener('click', closeOfferCreator);
 offerBtn.addEventListener('click', createOffer);
+benefitsBtn.addEventListener('click', calculateBenefit)
