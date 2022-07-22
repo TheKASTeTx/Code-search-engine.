@@ -455,7 +455,7 @@ button {
 
 .create-offer {
 	position: fixed;
-	top: 50px;
+	top: 15px;
 	width: 85vw;
 	height: 80vh;
 	z-index: 5;
@@ -471,6 +471,7 @@ button {
 	border-radius: 25px;
 	box-shadow: 0 0 200px black;
 	display: none;
+	z-index: 40;
 
 	input {
 		height: 2.5em;
@@ -482,19 +483,27 @@ button {
 		text-align: center;
 	}
 	&__exit {
+		position: absolute;
+		top: 20px;
+		left: 20px;
 		align-self: flex-start;
 		margin: 0.3em;
 		font-size: 3rem;
 		background: none;
 		border: none;
 		color: colors.$white;
+		transition: text-shadow .3s;
+		&:hover{
+			text-shadow: 0 0 15px colors.$orange;
+		}
 	}
 	&__info {
 		font-size: 1.4rem;
-		padding: 0.5em;
+		padding: 1em;
 	}
 	&__send {
 		padding: 1em 5em;
+		margin-top: 1em;
 		text-transform: uppercase;
 		font-weight: bold;
 		border-radius: 15px;
@@ -709,7 +718,7 @@ button {
 	}
 
 	.create-offer {
-		height: 90vh;
+		height: 98vh;
 		font-size: 4rem;
 
 		input {
@@ -725,7 +734,7 @@ button {
 		}
 		&__info {
 			font-size: 2rem;
-			padding: 2em;
+			padding: .5em;
 		}
 		&__send {
 			padding: 1.5em 5em;
